@@ -18,6 +18,7 @@ frameworks, unless they ship a governance primitive worth using on its own.
 - [Durable execution and rollback](#durable-execution-and-rollback)
 - [Observability, evaluation, and audit](#observability-evaluation-and-audit)
 - [Gateways and routing control](#gateways-and-routing-control)
+- [Supervision and liveness](#supervision-and-liveness)
 - [Governed operating stacks](#governed-operating-stacks)
 - [Design notes](#design-notes)
 
@@ -57,6 +58,14 @@ frameworks, unless they ship a governance primitive worth using on its own.
   routing across many model providers.
 - [LiteLLM](https://github.com/BerriAI/litellm) — Unified API across LLM providers; a practical choke
   point for budget limits and per-key policy.
+
+## Supervision and liveness
+
+Governance fails quietly when the machinery meant to enforce it stops running.
+
+- [schedule-sentinel](https://github.com/yagebin79386/schedule-sentinel) — Registry plus verifier for
+  scheduled machines: proves each entry still exists, ran inside its tolerance, and has not drifted
+  out of the scheduler in either direction. Stdlib only.
 
 ## Governed operating stacks
 
