@@ -28,6 +28,9 @@ frameworks, unless they ship a governance primitive worth using on its own.
   agents, so a tool call can require a person before it executes.
 - [Invariant](https://github.com/invariantlabs-ai/invariant) — Guardrails for secure and robust agent
   development, including contract-style checks on agent traces.
+- [fail-closed-gate](https://github.com/yagebin79386/fail-closed-gate) — File-backed approval gates
+  with an append-only decision ledger and fail-closed expiry: an unanswered request blocks, and the
+  expired record deliberately names no decider.
 
 ## Policy engines and guardrails
 
